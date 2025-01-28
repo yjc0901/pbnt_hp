@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<%- include('../include/head.ejs') %>
+<script src="/resources/js/jquery-1.8.3.min.js"></script>
+<script src="/resources/js/jquery-ui.js"></script>
+<script src="/resources/js/jquery.easing.min.js"></script>
+<script src="/resources/js/topmenu_script.js"></script>
+<script src="/resources/js/aos.js"></script>
+<script src="/resources/js/feather.min.js"></script>
+<link rel="stylesheet" href="/resources/css/aos.css">
+<link rel="stylesheet" href="/resources/css/sh_common.css"> 
+<link rel="stylesheet" href="/resources/css/sh_sub.css">     
+<link rel="stylesheet" href="/resources/css/style.css">     
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<body>
+
+<!-- sh_wrapper [s] -->
+<div id="sh_wrapper">
+
+    <!-- sh_hd [s] -->
+    <%- include('../include/sidebar.ejs') %>
+    <!-- sh_hd [e] -->
+    
+    <!-- sh_container [s] -->
+    <main id="sh_container">
+        <!-- shSubBnr [s] -->
+        <div id="subBnr">
+            <div class="txt_area">
+                MES        
+                <span>솔루션</span>
+            </div>
+        </div> 
+        <script>
+            $('#subBnr .txt_area').stop().delay(0).animate({"opacity":"1","padding-top":"0"},400);
+        </script>
+        <!-- shSubBnr [e] -->
+
+        <div id="sh_container_wrapper">
+            <!-- sh_aside [s] -->
+            <div id="sh_aside">
+                <div id="sh_aside_wrapper">
+                    <ul id="sh_snb">
+                        <li class="snb_on">
+                            <a href="/solutions/mes">MES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sh_aside [e] -->
+            <div id="sh_content">
+                <div id="sh_content_wrapper">
+                    <div class="mes-intro">
+                        <h1>MES 솔루션</h1>
+                        <p>제조 실행 시스템(MES)은 생산 현장의 데이터를 실시간으로 수집하고 분석하여 생산 효율성을 극대화하는 솔루션입니다.</p>
+                    </div>
+
+                    <div class="mes-image">
+                        <img src="/resources/img/sub/mes_main.png" alt="MES Example">
+                    </div>
+                    
+                    <h2>MES 하나로 관리에 필요한 모든 기능을!</h2>
+                    <div class="mes-features">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="mes-features-orders">
+                                        <p>수주 및 생산 관련 정보를 DB에 저장하고 확인하도록 이력 관리</p>
+                                        <img src="/resources/img/sub/mes_main.png" alt="MES Example">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="mes-features-production">
+                                        <p>수주 및 품목정보를 기준으로 작업지시와 생산일정 관리</p>
+                                        <img src="/resources/img/sub/mes_main.png" alt="MES Example">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- sh_container [e] -->
+    
+    <%- include('../include/footer.ejs') %>
+
+<!-- sh_wrapper [e] -->
+</div>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    
+    feather.replace();
+    AOS.init();
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<%- include('../include/head.ejs') %>
+<script src="/resources/js/jquery-1.8.3.min.js"></script>
+<script src="/resources/js/jquery-ui.js"></script>
+<script src="/resources/js/jquery.easing.min.js"></script>
+<script src="/resources/js/topmenu_script.js"></script>
+<script src="/resources/js/aos.js"></script>
+<script src="/resources/js/feather.min.js"></script>
+<link rel="stylesheet" href="/resources/css/aos.css">
+<link rel="stylesheet" href="/resources/css/sh_common.css"> 
+<link rel="stylesheet" href="/resources/css/sh_sub.css">     
+<link rel="stylesheet" href="/resources/css/style.css">     
+
+<body>
+
+<!-- sh_wrapper [s] -->
+<div id="sh_wrapper">
+
+    <!-- sh_hd [s] -->
+    <%- include('../include/sidebar.ejs') %>
+    <!-- sh_hd [e] -->
+    
+    <!-- sh_container [s] -->
+    <main id="sh_container">
+        <!-- shSubBnr [s] -->
+        <div id="subBnr">
+            <div class="txt_area">
+                대표이사        
+                <span>회사소개</span>
+            </div>
+        </div> 
+        <script>
+            $('#subBnr .txt_area').stop().delay(0).animate({"opacity":"1","padding-top":"0"},400);
+        </script>
+        <!-- shSubBnr [e] -->
+
+        <div id="sh_container_wrapper">
+            <!-- sh_aside [s] -->
+            <div id="sh_aside">
+                <div id="sh_aside_wrapper">
+                    <ul id="sh_snb">
+                        <li class="snb_on">
+                            <a href="/about/aboutCeo">대표이사</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sh_aside [e] -->
+            
+            <div id="sh_content">
+                <div class="executive-intro-title">
+                    <h1>대표이사 소개</h1>
+                    <p >혁신과 성장을 이끄는 Platform B&T의 리더십</p>
+                </div>
+                <div class="executive-intro">
+                    <div class="intro-text">
+                        <h2>CEO 인사말</h2>
+                        <p>안녕하십니까, Platform B&T의 대표이사 김종진입니다.</p>
+                        <p>저희 Platform B&T는 AI 기반의 디지털전환을 통해 제조산업의 경쟁력을 제고하는 것을 목표로 삼고 있습니다.</p>
+                        <p>급변하는 산업 환경 속에서 디지털 기술의 접목은 선택이 아닌 필수가 되었으며, 우리는 이러한 변화에 발맞춰 제조업의 혁신을 선도하고자 합니다.</p>
+                        <p>우리의 미션은 제조산업의 AI 기반 디지털전환을 실현하는 플랫폼 기업으로 자리매김하는 것입니다.</p>
+                        <p>이를 위해 우리는 디지털 역량을 지속적으로 개발하며, 기술 중심의 기업으로 도약하고자 합니다.</p>
+                        <p>또한, 개방성과 협업을 핵심 가치로 삼아 다양한 파트너들과의 협력을 통해 더욱 강력한 협력 플랫폼을 구축해 나가겠습니다.</p>
+                        <p>회사의 성장은 결코 혼자의 힘으로 이루어질 수 없습니다. 우리는 고객, 협력사, 그리고 구성원들과 함께 지속 가능한 혁신을 이루어나가며, 미래의 제조산업을 더욱 스마트하고 효율적으로 변화시키겠습니다.</p>
+                        <p>앞으로도 저희 회사는 AI 기반 디지털전환의 선두 주자로서 새로운 도전과 기회를 모색하며, 더욱 발전된 미래를 만들어 나가겠습니다.</p>
+                        <p>감사합니다.</p>
+                        <p>Platform B&T 대표이사 김종진 드림</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="/resources/img/sub/ceo.jpg" alt="김종진 대표">
+                        <div class="image-caption">
+                            <p>김종진</p>
+                            <span>대표이사</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="executive-intro-1">
+                    <div class="executive-intro-box">
+                        <div class="executive-intro-history">
+                            <h2>대표이사 경력</h2>
+                            <ul>
+                                <li>(現) 플랫폼비앤티(주) 대표 (24년 4월~)</li>
+                                <li>(주)테이아 사업담당 부사장 (20~23년)</li>
+                                <li>스마트공장용 실시간위치측정솔루션 공급</li>
+                                <li>현대오토에버(주) 임원 ('01~'18년)</li>
+                                <li>현대차그룹 IT전문사 기획/전략/사업</li>
+                                <li>대우자동차(주) 연구원 ('96~'00년)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="executive-intro-box">
+                        <div class="executive-intro-education">
+                            <h2>대표이사 학력 및 자격</h2>
+                            <ul>
+                                <li>MBA</li>
+                                <li>재료공학석사</li>
+                                <li>미국공인회계사</li>
+                                <li>기술경영(DT, AI) 박사과정 (25년 3월~)</li>
+                                <li>경상국립대 기술경영학과 박사과정</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- sh_container [e] -->
+    
+    <%- include('../include/footer.ejs') %>
+
+<!-- sh_wrapper [e] -->
+</div>
+
+<script>
+    feather.replace();
+    AOS.init();
+</script>
+
+</body>
+</html>
+

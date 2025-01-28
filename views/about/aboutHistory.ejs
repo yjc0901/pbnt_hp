@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<%- include('../include/head.ejs') %>
+<script src="/resources/js/jquery-1.8.3.min.js"></script>
+<script src="/resources/js/jquery-ui.js"></script>
+<script src="/resources/js/jquery.easing.min.js"></script>
+<script src="/resources/js/topmenu_script.js"></script>
+<script src="/resources/js/aos.js"></script>
+<script src="/resources/js/feather.min.js"></script>
+<link rel="stylesheet" href="/resources/css/aos.css">
+<link rel="stylesheet" href="/resources/css/sh_common.css"> 
+<link rel="stylesheet" href="/resources/css/sh_sub.css">     
+<link rel="stylesheet" href="/resources/css/style.css">     
+
+<body>
+
+<!-- sh_wrapper [s] -->
+<div id="sh_wrapper">
+
+    <!-- sh_hd [s] -->
+    <%- include('../include/sidebar.ejs') %>
+    <!-- sh_hd [e] -->
+    
+    <!-- sh_container [s] -->
+    <main id="sh_container">
+        <!-- shSubBnr [s] -->
+        <div id="subBnr">
+            <div class="txt_area">
+                연혁        
+                <span>회사소개</span>
+            </div>
+        </div> 
+        <script>
+            $('#subBnr .txt_area').stop().delay(0).animate({"opacity":"1","padding-top":"0"},400);
+        </script>
+        <!-- shSubBnr [e] -->
+
+        <div id="sh_container_wrapper">
+            <!-- sh_aside [s] -->
+            <div id="sh_aside">
+                <div id="sh_aside_wrapper">
+                    <ul id="sh_snb">
+                        <li class="snb_on">
+                            <a href="/about/aboutHistory">연혁</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sh_aside [e] -->
+
+            <div id="sh_content">
+                <div class="timeline">
+                    <div class="timeline-item-right">
+                        <div class="timeline-content">
+                            <h3>2025</h3>
+                            <div class="list_right">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>01.20</dt>
+                                            <dd>스마트제조지원사업 공급업체 등록</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>01.09</dt>
+                                            <dd>생산관리프로그램(MES) 저작권 등록</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2024</h3>
+                            <div class="list_left">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>04.01</dt>
+                                            <dd>플랫폼비앤티 주식회사 설립</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- sh_container [e] -->
+    
+    <%- include('../include/footer.ejs') %>
+
+<!-- sh_wrapper [e] -->
+</div>
+
+<script>
+    feather.replace();
+    AOS.init();
+</script>
+
+</body>
+</html>
+
