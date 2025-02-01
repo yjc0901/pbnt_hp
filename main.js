@@ -143,7 +143,7 @@ app.get('/solutions/mes', async (req, res) => {
     }
 });
 
-// 고객지원원 - 가격안내
+// 고객지원 - 가격안내
 app.get('/contact/pricingInfo', async (req, res) => {
     try {
         res.render('contact/pricingInfo');

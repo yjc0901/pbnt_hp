@@ -48,7 +48,7 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 #shGnb .sh_nav > ul > li:hover .sh_lnb_s:before{width:calc(100% + 40px);height: 2px;opacity:1}f#shGnb.fix #pfBtn.active
 #shGnb .sh_nav > ul > li:hover .sh_lnb_s a{color:#777}
 #shGnb .sh_nav > ul > li:hover .sh_lnb_s a:hover{color:var(--primary)}
-#shGnb.on .sh_nav > ul > li > a{padding:0 50px;color:#222}
+#shGnb.on .sh_nav > ul > li > a{color:#222}
 #shGnb.on #pfBtn span:before{background:#222}
 #shGnb.on #pfBtn span:after{background:#222}
 #shGnb.on #pfBtn span{background:#222}
