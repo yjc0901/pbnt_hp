@@ -10,7 +10,12 @@
 <link rel="stylesheet" href="/resources/css/aos.css">
 <link rel="stylesheet" href="/resources/css/sh_common.css"> 
 <link rel="stylesheet" href="/resources/css/sh_sub.css">     
-<link rel="stylesheet" href="/resources/css/style.css">     
+<link rel="stylesheet" href="/resources/css/style.css">  
+<!-- AOS CSS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>   
 
 <body>
 
@@ -26,8 +31,7 @@
         <!-- shSubBnr [s] -->
         <div id="subBnr">
             <div class="txt_area">
-                연혁        
-                <span>회사소개</span>
+                회사소개        
             </div>
         </div> 
         <script>
@@ -40,15 +44,25 @@
             <div id="sh_aside">
                 <div id="sh_aside_wrapper">
                     <ul id="sh_snb">
-                        <li class="snb_on">
-                            <a href="/about/aboutHistory">연혁</a>
+                        <li>
+                            <a href="/about/aboutCompany">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="/about/aboutCeo">CEO 인사말</a>
+                        </li>
+                        <li>
+                            <a href="/about/aboutHistory" class="snb_on">연혁</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <!-- sh_aside [e] -->
 
-            <div id="sh_content">
+            <div id="sh_content" data-aos="fade-up">
+                <div class="intro-title">
+                    <h1>연혁</h1>
+                    <p >혁신과 성장을 이끄는 Platform B&T의 연혁</p>
+                </div>
                 <div class="timeline">
                     <div class="timeline-item-right">
                         <div class="timeline-content">
@@ -99,7 +113,11 @@
 
 <script>
     feather.replace();
-    AOS.init();
+    AOS.init({
+        duration: 800, // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out', // 애니메이션 이징
+        once: true, // 스크롤 시 한 번만 애니메이션 실행
+    });
 </script>
 
 </body>

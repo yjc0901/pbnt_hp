@@ -26,8 +26,8 @@
         <!-- shSubBnr [s] -->
         <div id="subBnr">
             <div class="txt_area">
-                대표이사        
-                <span>회사소개</span>
+                회사소개        
+                <!-- <span>회사소개</span> -->
             </div>
         </div> 
         <script>
@@ -40,31 +40,35 @@
             <div id="sh_aside">
                 <div id="sh_aside_wrapper">
                     <ul id="sh_snb">
-                        <li class="snb_on">
-                            <a href="/about/aboutCeo">대표이사</a>
+                        <li>
+                            <a href="/about/aboutCompany">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="/about/aboutCeo" class="snb_on">CEO 인사말</a>
+                        </li>
+                        <li>
+                            <a href="/about/aboutHistory">연혁</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <!-- sh_aside [e] -->
             
-            <div id="sh_content">
-                <div class="executive-intro-title">
-                    <h1>대표이사 소개</h1>
+            <div id="sh_content" data-aos="fade-up">
+                <div class="intro-title">
+                    <h1>CEO 인사말</h1>
                     <p >혁신과 성장을 이끄는 Platform B&T의 리더십</p>
                 </div>
                 <div class="executive-intro">
                     <div class="intro-text">
-                        <h2>CEO 인사말</h2>
                         <p>안녕하십니까, Platform B&T의 대표이사 김종진입니다.</p>
-                        <p>저희 Platform B&T는 AI 기반의 디지털전환을 통해 제조산업의 경쟁력을 제고하는 것을 목표로 삼고 있습니다.</p>
-                        <p>급변하는 산업 환경 속에서 디지털 기술의 접목은 선택이 아닌 필수가 되었으며, 우리는 이러한 변화에 발맞춰 제조업의 혁신을 선도하고자 합니다.</p>
-                        <p>우리의 미션은 제조산업의 AI 기반 디지털전환을 실현하는 플랫폼 기업으로 자리매김하는 것입니다.</p>
-                        <p>이를 위해 우리는 디지털 역량을 지속적으로 개발하며, 기술 중심의 기업으로 도약하고자 합니다.</p>
-                        <p>또한, 개방성과 협업을 핵심 가치로 삼아 다양한 파트너들과의 협력을 통해 더욱 강력한 협력 플랫폼을 구축해 나가겠습니다.</p>
-                        <p>회사의 성장은 결코 혼자의 힘으로 이루어질 수 없습니다. 우리는 고객, 협력사, 그리고 구성원들과 함께 지속 가능한 혁신을 이루어나가며, 미래의 제조산업을 더욱 스마트하고 효율적으로 변화시키겠습니다.</p>
-                        <p>앞으로도 저희 회사는 AI 기반 디지털전환의 선두 주자로서 새로운 도전과 기회를 모색하며, 더욱 발전된 미래를 만들어 나가겠습니다.</p>
-                        <p>감사합니다.</p>
+                        <p>먼저 고객 여러분의 변함없는 관심과 성원에 깊이 감사드립니다.</p>
+                        <p>저희 <b>Platform B&T 주식회사</b>는 단순한 수익 창출을 넘어서, 고객과 함께 성장하고 공유할 수 있는 신뢰할 수 있는 파트너로 자리매김하고 있습니다.</p>
+                        <p>2024년 4월 1일에 설립된 저희 회사는 기술을 통한 사회적 가치를 창출하며, 사람 중심의 혁신적인 솔루션을 제공하고자 모든 역량을 집중하고 있습니다.</p>
+                        <p>스마트 제조, 인공지능(AI), 디지털 트윈 등 신기술을 활용하여 제조 산업을 혁신하는 데 기여하고 있습니다.</p>
+                        <p>저희는 고객과 함께 도전하고, 끊임없이 발전하며 혁신을 이뤄내는 기업이 되겠습니다.</p>
+                        <p>언제나 변함없는 관심과 성원에 감사드리며, 여러분의 기대에 부응하는 Platform B&T가 되겠습니다.</p>
+                        <p>앞으로도 저희와 함께 성장하는 여정에 함께해 주시기 바랍니다.</p>
                         <p>Platform B&T 대표이사 김종진 드림</p>
                     </div>
                     <div class="intro-image">
@@ -115,7 +119,11 @@
 
 <script>
     feather.replace();
-    AOS.init();
+    AOS.init({
+        duration: 1200, // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out', // 애니메이션 이징
+        once: true, // 스크롤 시 한 번만 애니메이션 실행
+    });
 </script>
 
 </body>

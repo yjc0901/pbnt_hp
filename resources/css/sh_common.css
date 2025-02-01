@@ -25,7 +25,9 @@ body{font-size:0.81em}
 *, :after, :before{box-sizing:border-box}
 *{-webkit-text-size-adjust:none}
 .sound_only{display:inline-block !important;position:absolute;top:0;left:0;margin:0 !important;padding:0 !important;font-size:0;line-height:0;border:0 !important;overflow:hidden !important}
-:root{--primary:#1465f4;--k-font:'Pretendard';--e-font:'poppins'}
+:root{--primary:#2457BD;--k-font:'Pretendard';--e-font:'poppins'}
+h1 {font-size: 48px;color: #333;font-weight: 700;margin-bottom: 20px;}
+h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 /* ========================== 초기화 [e] */
 
 /* ========================== HEADER */
@@ -41,7 +43,7 @@ body{font-size:0.81em}
 /* 대분류  */
 #shGnb .sh_nav{margin-right:45px}
 #shGnb .sh_nav > ul > li{float:left;position:relative;line-height:100px;transition:all .4s ease-in-out}
-#shGnb .sh_nav > ul > li > a{position:relative;z-index:20;display:block;padding:0 50px;font-size:15px;font-weight:500;color:#fff;transition:all .2s;font-family:var(--main-font)}
+#shGnb .sh_nav > ul > li > a{position:relative;z-index:20;display:block;padding:0 55px;font-size:18px;font-weight:500;color:#fff;transition:all .2s;font-family:var(--main-font)}
 #shGnb .sh_nav > ul > li:hover > a{color:var(--primary)!important;}
 #shGnb .sh_nav > ul > li:hover .sh_lnb_s:before{width:calc(100% + 40px);height: 2px;opacity:1}f#shGnb.fix #pfBtn.active
 #shGnb .sh_nav > ul > li:hover .sh_lnb_s a{color:#777}
@@ -54,7 +56,7 @@ body{font-size:0.81em}
 /* 소분류 */
 #shGnb .sh_lnb_s{display:none;position:absolute;left:50%;transform:translateX(-50%);min-width:100%;width:max-content;padding-top:25px;min-height:145px}
 #shGnb .sh_lnb_s:before{opacity:0;display:block;content:"";position:absolute;left:50%;top:-1px;z-index:-1;transform:translateX(-50%);width:0;height:1px;background:var(--primary);transition:all .2s}
-#shGnb .sh_lnb_s li a{display:block;font-size:15px;font-weight:500;line-height:1.8;margin-bottom:10px;text-align:center;color:#555;transition:all .2s}
+#shGnb .sh_lnb_s li a{display:block;font-size:16px;font-weight:500;line-height:1.8;margin-bottom:10px;text-align:center;color:#555;transition:all .2s}
 #shGnb .sh_lnb_s li a:hover{color:var(--primary)}
 
 /* 메뉴버튼 */
@@ -202,6 +204,14 @@ body{font-size:0.81em}
 #sh_ft .info{font-size:14px}
 #sh_ft .copy{gap:26px;font-size:14px}
 #sh_ft .link{gap:26px}
+}
+@media (max-width:960px){
+    img {
+        width: 20%;
+    }
+    #navWrap.on .inner:before, #navWrap.on .inner:after {
+        opacity: 0;
+    }
 }
 @media (max-width:768px){
 #sh_section .top_cont{position:unset !important;flex-direction:column;align-items:center;gap:18px;margin-bottom:40px}

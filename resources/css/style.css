@@ -1,3 +1,14 @@
+/***/
+.intro-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro-title p {
+  font-size: 24px;
+  color: #666;
+}
+
 /* 회사소개 */
 #greeting{font-size:15px;font-weight:400;line-height:1.8;letter-spacing:-.2px;color:#666;font-family:'Noto Sans KR'}
 #greeting .tit_area{padding:0 0 40px 5%;font-size:38px;font-weight:100;line-height:1.35;letter-spacing:-.5px;color:#222}
@@ -23,30 +34,6 @@
 .intro-text {
   flex: 1;
   padding-right: 20px;
-}
-
-.executive-intro-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.executive-intro-title h1 {
-  font-size: 48px;
-  color: #333;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.executive-intro-title p {
-  font-size: 24px;
-  color: #666;
-}
-
-.intro-text h2 {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.6;
-  margin-bottom: 20px;
 }
 
 .intro-text p {
@@ -133,6 +120,16 @@
 }
 
 /* 연혁 */
+.history-intro-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.history-intro-title p {
+  font-size: 24px;
+  color: #666;
+}
+
 .timeline {
   position: relative;
   padding: 20px;
@@ -317,10 +314,10 @@ dd {
 }
 
 /* ----- 문의하기 ----- */
-.inquiry-form {
+.contact-form {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 0 20px;
 }
 
 /* .contact-title {
@@ -532,12 +529,6 @@ button.close-popup {
   margin-bottom: 40px;
 }
 
-.mes-intro h1 {
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
 .mes-intro p {
   font-size: 18px;
   color: #555;
@@ -593,6 +584,13 @@ button.close-popup {
   #greeting .cont{padding:20px 20px;max-width: 100%;}
   #greeting .cont .sign{margin-top:20px}
   #greeting .cont .sign span{margin-left:0;font-size:15px}
+}
+
+@media(max-width:960px){
+  /* 연혁 */
+  .timeline-content {
+    width: 400px;
+  }
 }
 
 @media(max-width:768px){

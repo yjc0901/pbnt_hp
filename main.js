@@ -104,9 +104,9 @@ app.get('/service/axDx', async (req, res) => {
 });
 
 // 사업안내 - 디지털 솔루션
-app.get('/service/digitalSolution', async (req, res) => {
+app.get('/service/processOptimization', async (req, res) => {
     try {
-        res.render('service/digitalSolution');
+        res.render('service/processOptimization');
     } catch (error) {
         console.error(error);
         res.status(500).send('error');
@@ -143,20 +143,10 @@ app.get('/solutions/mes', async (req, res) => {
     }
 });
 
-// 솔루션 - 가격안내
-app.get('/solutions/pricingInfo', async (req, res) => {
+// 고객지원원 - 가격안내
+app.get('/contact/pricingInfo', async (req, res) => {
     try {
-        res.render('solutions/pricingInfo');
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('error');
-    }
-});
-
-// 고객지원 - 공지사항
-app.get('/contact/board', async (req, res) => {
-    try {
-        res.render('contact/board');
+        res.render('contact/pricingInfo');
     } catch (error) {
         console.error(error);
         res.status(500).send('error');
@@ -167,6 +157,16 @@ app.get('/contact/board', async (req, res) => {
 app.get('/contact/contact', async (req, res) => {
     try {
         res.render('contact/contact');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('error');
+    }
+});
+
+// 고객지원 - 공지사항
+app.get('/contact/board', async (req, res) => {
+    try {
+        res.render('contact/board');
     } catch (error) {
         console.error(error);
         res.status(500).send('error');
