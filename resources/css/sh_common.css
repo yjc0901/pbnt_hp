@@ -216,9 +216,6 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 #sh_ft .link{gap:26px}
 }
 @media (max-width:960px){
-    img {
-        width: 20%;
-    }
     #navWrap.on .inner:before, #navWrap.on .inner:after {
         opacity: 0;
     }
