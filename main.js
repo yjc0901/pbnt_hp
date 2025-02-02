@@ -4,7 +4,7 @@ require('dotenv').config(); // 환경 변수 로드
 // === 필요한 패키지 임포트 ===
 const express = require('express');
 var path = require('path');
-const mysql2 = require('mysql2/promise');
+// const mysql2 = require('mysql2/promise');
 const nodemailer = require('nodemailer');
 
 // === 환경 변수 확인 및 서버 포트 설정 ===
@@ -18,30 +18,30 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 // === MySQL 연결 설정 ===
-const _pool = mysql2.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    port: process.env.DB_PORT,
-    dateStrings: 'date',
-    connectionLimit: 10,
-    timezone: '+09:00',
-    charset: 'utf8mb4',
-});
+// const _pool = mysql2.createPool({
+//     host: process.env.DB_HOST,
+//     user: process.env.DB_USER,
+//     password: process.env.DB_PASSWORD,
+//     database: process.env.DB_DATABASE,
+//     port: process.env.DB_PORT,
+//     dateStrings: 'date',
+//     connectionLimit: 10,
+//     timezone: '+09:00',
+//     charset: 'utf8mb4',
+// });
 
 // === 유틸 함수 ===
-async function asyncQuery(sql, params = []) {
-    const conn = await _pool.getConnection();
-    try {
-        const [rows] = await conn.query(sql, params);
-        return rows;
-    } catch (err) {
-        console.error(`쿼리 오류: ${err}`);
-    } finally {
-        conn.release();
-    }
-}
+// async function asyncQuery(sql, params = []) {
+//     const conn = await _pool.getConnection();
+//     try {
+//         const [rows] = await conn.query(sql, params);
+//         return rows;
+//     } catch (err) {
+//         console.error(`쿼리 오류: ${err}`);
+//     } finally {
+//         conn.release();
+//     }
+// }
 
 // 메인
 app.get('/', async (req, res) => {

@@ -606,19 +606,6 @@ button.close-popup {
   color: #555;
 }
 
-.mes-image {
-  text-align: center;
-}
-
-.mes-image img {
-  width: 80%;
-  max-width: 800px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 60px;
-}
-
 #sh_content_wrapper h2 {
   font-weight: 500;
   font-size: 44px;
@@ -642,10 +629,25 @@ button.close-popup {
   position: relative;
 }
 
-.mes-features-orders {
+.mes-features img {
+  width: 90%;
   margin-bottom: 30px;
 }
 
+.mes-solution {
+  margin-top: 60px;
+}
+
+.mes-solution p {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.mes-solution img {
+  width: 30%;
+  margin-bottom: 30px;
+}
 
 /* 반응형 */
 @media(max-width:1024px){
