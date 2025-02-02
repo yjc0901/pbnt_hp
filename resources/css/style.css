@@ -308,6 +308,145 @@ dd {
   margin-bottom: 0; /* 마지막 li 요소의 간격 제거 */
 }
 
+/* 주요 사업 */
+.hero {
+  margin-top: 20px;
+  /* background: linear-gradient(45deg, #2c3e50, #3498db); */
+  background: linear-gradient(45deg, #0b1928, #69bbe2);
+  color: white;
+  padding: 6rem 2rem;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.4;
+  padding-left: 10px;
+}
+
+.vision {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-strength {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.project-highlight {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.tech-stack {
+  background: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.development-approach {
+  padding: 4rem 2rem;
+  background: #2c3e50;
+  color: white;
+}
+
+.business-contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.business-placeholder {
+  background: #ddd;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MES */
+.mes-intro {
+  margin-bottom: 40px;
+}
+
+.mes-intro p {
+  font-size: 18px;
+  color: #555;
+}
+
+#sh_content_wrapper h2 {
+  font-weight: 500;
+  font-size: 44px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.mes-features {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* 박스 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.mes-features p {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.mes-features img {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.mes-solution {
+  margin-top: 60px;
+}
+
+.mes-solution p {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.mes-solution img {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+
 /* 가격안내 */
 .pricing-section {
   padding: 80px 20px;
@@ -596,58 +735,6 @@ button.close-popup {
   width: auto;
 }
 
-/* MES */
-.mes-intro {
-  margin-bottom: 40px;
-}
-
-.mes-intro p {
-  font-size: 18px;
-  color: #555;
-}
-
-#sh_content_wrapper h2 {
-  font-weight: 500;
-  font-size: 44px;
-  color: var(--primary);
-  margin-bottom: 20px;
-}
-
-.mes-features {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1000px; /* 박스 최대 너비 설정 */
-  margin: 0 auto; /* 가운데 정렬 */
-}
-
-.mes-features p {
-  font-size: 24px;
-  color: #555;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.mes-features img {
-  width: 90%;
-  margin-bottom: 30px;
-}
-
-.mes-solution {
-  margin-top: 60px;
-}
-
-.mes-solution p {
-  font-size: 24px;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.mes-solution img {
-  width: 30%;
-  margin-bottom: 30px;
-}
 
 /* 반응형 */
 @media(max-width:1024px){
