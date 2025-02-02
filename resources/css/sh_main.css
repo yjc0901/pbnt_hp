@@ -162,7 +162,7 @@
 #inc02 .wrap article .cont .txt p strong{font-size:35px;font-weight:700;color:#fff}
 #inc02 .wrap article .cont .txt p span{display:inline-block;font-size:15px;font-weight:700;color:rgba(255, 255, 255, 0.5);font-family:"poppins"}
 #inc02 .wrap article .cont .txt .desc{opacity:0;font-size:16px;word-break:keep-all;transition:opacity .4s}
-#inc02 .wrap article .img_area{position:absolute;right:55px;z-index:10;opacity:0;transition:all .4s;width:400px;}
+/* #inc02 .wrap article .img_area{position:absolute;right:55px;z-index:10;opacity:0;transition:all .4s;width:400px;} */
 
 
 

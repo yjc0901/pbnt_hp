@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<%- include('../include/head.ejs') %>
+<script src="/resources/js/jquery-1.8.3.min.js"></script>
+<script src="/resources/js/jquery-ui.js"></script>
+<script src="/resources/js/jquery.easing.min.js"></script>
+<script src="/resources/js/topmenu_script.js"></script>
+<script src="/resources/js/aos.js"></script>
+<script src="/resources/js/feather.min.js"></script>
+<link rel="stylesheet" href="/resources/css/aos.css">
+<link rel="stylesheet" href="/resources/css/sh_common.css"> 
+<link rel="stylesheet" href="/resources/css/sh_sub.css">     
+<link rel="stylesheet" href="/resources/css/style.css">     
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<body>
+
+<!-- sh_wrapper [s] -->
+<div id="sh_wrapper">
+
+    <!-- sh_hd [s] -->
+    <%- include('../include/sidebar.ejs') %>
+    <!-- sh_hd [e] -->
+    
+    <!-- sh_container [s] -->
+    <main id="sh_container">
+        <!-- shSubBnr [s] -->
+        <div id="subBnr">
+            <div class="txt_area">
+                주요 솔루션
+            </div>
+        </div> 
+        <script>
+            $('#subBnr .txt_area').stop().delay(0).animate({"opacity":"1","padding-top":"0"},400);
+        </script>
+        <!-- shSubBnr [e] -->
+
+        <div id="sh_container_wrapper">
+            <!-- sh_aside [s] -->
+            <div id="sh_aside">
+                <div id="sh_aside_wrapper">
+                    <ul id="sh_snb">
+                        <li>
+                            <a href="/solutions/mes">P.MES 제조실행시스템</a>
+                        </li>
+                        <li>
+                            <a href="/solutions/predictiveConservation">예지보전 플랫폼</a>
+                        </li>
+                        <li>
+                            <a href="/solutions/digitalTwin" class="snb_on">AI기반 디지털트윈</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sh_aside [e] -->
+            
+            <div id="sh_content" data-aos="fade-up">
+              <div id="sh_content_wrapper">
+                  <div class="mes-intro" data-aos="fade-up">
+                      <h1>AI 기반 디지털트윈</h1>
+                      <p>(개발중)</p>
+                  </div>
+              </div>
+              <section class="digital-twin-team-strength" id="team" data-aos="fade-up">
+                <div class="digital-twin-grid">
+                  <div class="digital-twin-img">
+                    <img src="/resources/img/sub/digital_twin.jpg" alt="digital twin">
+                  </div>
+                  <div class="digital-twin-placeholder">
+                      <ul>
+                          <li>사용자의 제품설치 및 통신 제약 없는 환경 구성</li>
+                          <li>장소/위치 제한 없는 클라우드 플랫폼 환경 구축</li>
+                          <li>Web 표준기술 적용한 보안성 확보 상업화 시 예견되는 보안 위협 대응</li>
+                      </ul>
+                  </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </main>
+    <!-- sh_container [e] -->
+    
+    <%- include('../include/footer.ejs') %>
+
+<!-- sh_wrapper [e] -->
+</div>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    
+    feather.replace();
+    AOS.init({
+        duration: 800, // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out', // 애니메이션 이징
+        once: true, // 스크롤 시 한 번만 애니메이션 실행
+    });
+</script>
+
+</body>
+</html>
+

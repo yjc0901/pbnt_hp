@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<%- include('../include/head.ejs') %>
+<script src="/resources/js/jquery-1.8.3.min.js"></script>
+<script src="/resources/js/jquery-ui.js"></script>
+<script src="/resources/js/jquery.easing.min.js"></script>
+<script src="/resources/js/topmenu_script.js"></script>
+<script src="/resources/js/aos.js"></script>
+<script src="/resources/js/feather.min.js"></script>
+<link rel="stylesheet" href="/resources/css/aos.css">
+<link rel="stylesheet" href="/resources/css/sh_common.css"> 
+<link rel="stylesheet" href="/resources/css/sh_sub.css">     
+<link rel="stylesheet" href="/resources/css/style.css">     
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<body>
+
+<!-- sh_wrapper [s] -->
+<div id="sh_wrapper">
+
+    <!-- sh_hd [s] -->
+    <%- include('../include/sidebar.ejs') %>
+    <!-- sh_hd [e] -->
+    
+    <!-- sh_container [s] -->
+    <main id="sh_container">
+        <!-- shSubBnr [s] -->
+        <div id="subBnr">
+            <div class="txt_area">
+                주요 솔루션
+            </div>
+        </div> 
+        <script>
+            $('#subBnr .txt_area').stop().delay(0).animate({"opacity":"1","padding-top":"0"},400);
+        </script>
+        <!-- shSubBnr [e] -->
+
+        <div id="sh_container_wrapper">
+            <!-- sh_aside [s] -->
+            <div id="sh_aside">
+                <div id="sh_aside_wrapper">
+                    <ul id="sh_snb">
+                        <li>
+                            <a href="/solutions/mes">P.MES 제조실행시스템</a>
+                        </li>
+                        <li>
+                            <a href="/solutions/predictiveConservation" class="snb_on">예지보전 플랫폼</a>
+                        </li>
+                        <li>
+                            <a href="/solutions/digitalTwin">AI기반 디지털트윈</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sh_aside [e] -->
+            <div id="sh_content">
+                <div id="sh_content_wrapper">
+                    <div class="mes-intro" data-aos="fade-up">
+                        <h1>AI  알고리즘 기반 산업용 설비 예지보전 플랫폼</h1>
+                        <p>솔루션화 및 플랫폼 구축</p>
+                    </div>
+                </div>
+                <div class="predictive-img" data-aos="fade-up"><img src="/resources/img/sub/predictive.png" alt="predictive"></div>
+
+                <section class="project-highlight" id="project" data-aos="fade-up">
+                  <h2>▪ Saas 기반 플랫폼 환경 구축</h2>
+                </section>
+                
+                <section class="team-strength" id="team" data-aos="fade-up">
+                  <h2>▪ 기본 데이터 수집 및 시각화 툴 개발</h2>
+                  <div class="project-grid">
+                      <div class="project-placeholder">
+                          <ul>
+                              <li>산업용 설비 예지보전를 위한 기본 데이터 수집</li>
+                              <li> Web 서비스 기반 데이터 집계 및 통계 시각화 툴 개발</li>
+                          </ul>
+                      </div>
+                  </div>
+                </section>
+          
+                <section class="project-highlight" id="project" data-aos="fade-up">
+                    <h2>▪ 실시간 설비 데이터 기반 예지보전 알고리즘 개발</h2>
+                    <div class="project-placeholder">
+                        <ul>
+                            <li>데이터의 항목별 상관관계 분석 기능 개발</li>
+                            <li>실시간 데이터 및 집계 데이터 등 수집된 정보를 바탕으로 예지보전에 사용</li>
+                            <li>되는 다양한 시계열 알고리즘을 시험 평가</li>
+                            <li>데이터 기반 산업용 설비 예지보전에 가장 적합한 기법 선정</li>
+                            <li>데이터 지속 축적과 AI 학습으로 상업화 가능한 수준의 분석 신뢰도 달성</li>
+                            <li>이상징후 탐지 시 알림 발생 기능 구현</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>            
+        </div>
+    </main>
+    <!-- sh_container [e] -->
+    
+    <%- include('../include/footer.ejs') %>
+
+<!-- sh_wrapper [e] -->
+</div>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    
+    feather.replace();
+    AOS.init({
+        duration: 600, // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out', // 애니메이션 이징
+        once: true, // 스크롤 시 한 번만 애니메이션 실행
+    });
+</script>
+
+</body>
+</html>
+

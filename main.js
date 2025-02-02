@@ -143,6 +143,26 @@ app.get('/solutions/mes', async (req, res) => {
     }
 });
 
+// 솔루션 - 예지보전 플랫폼
+app.get('/solutions/predictiveConservation', async (req, res) => {
+    try {
+        res.render('solutions/predictiveConservation');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('error');
+    }
+});
+
+// 솔루션 - AI기반 디지털트윈
+app.get('/solutions/digitalTwin', async (req, res) => {
+    try {
+        res.render('solutions/digitalTwin');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('error');
+    }
+});
+
 // 고객지원 - 가격안내
 app.get('/contact/pricingInfo', async (req, res) => {
     try {

@@ -42,7 +42,17 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 
 /* 대분류  */
 #shGnb .sh_nav{margin-right:45px}
-#shGnb .sh_nav > ul > li{float:left;position:relative;line-height:100px;transition:all .4s ease-in-out}
+#shGnb .sh_nav > ul > li {
+    float: left;
+    position: relative;
+    line-height: 100px;
+    transition: all 0.4s ease-in-out;
+    margin-right: 60px; /* 기존보다 간격을 늘림 */
+}
+/* 마지막 메뉴 항목의 오른쪽 여백을 제거 */
+#shGnb .sh_nav > ul > li:last-child {
+    margin-right: 0;
+}
 #shGnb .sh_nav > ul > li > a{position:relative;z-index:20;display:block;padding:0 55px;font-size:18px;font-weight:500;color:#fff;transition:all .2s;font-family:var(--main-font)}
 #shGnb .sh_nav > ul > li:hover > a{color:var(--primary)!important;}
 #shGnb .sh_nav > ul > li:hover .sh_lnb_s:before{width:calc(100% + 40px);height: 2px;opacity:1}f#shGnb.fix #pfBtn.active
