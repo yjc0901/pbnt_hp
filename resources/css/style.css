@@ -1171,8 +1171,29 @@ button.close-popup {
     font-size: 20px;
   }  
 
+  /* predictiveConservation */
+  .predictive-img {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .project-highlight h2 {
+    font-size: 22px;
+  }
+
+  .project-placeholder li {
+    font-size: 15px;
+  }
+
+  .team-strength h2 {
+    font-size: 22px;
+  }
+
+
   /* digitalTwin */
+
   .digital-twin-team-strength {
+
     padding: 0;
     background: white;
 }
