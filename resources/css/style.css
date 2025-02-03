@@ -74,6 +74,9 @@
 #greeting .list li {
   position: relative;
   padding-left: 20px; /* 마커 공간 확보 */
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 #greeting .list li:before {
@@ -83,10 +86,7 @@
   left: 0;
   color: var(--primary); /* 원하는 색상으로 변경 */
 }
-#greeting .list li {
-  margin: 5px 0;
-  font-size: 16px;
-}
+
 #greeting .content .card:not(:last-child) {
   border-right: 1px solid #ddd;
 }
