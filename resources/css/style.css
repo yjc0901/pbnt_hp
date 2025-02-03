@@ -508,7 +508,7 @@ dd {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fbd065;
+  background-color: #FECF71;
 }
 
 .app-project-placeholder {
@@ -1026,7 +1026,7 @@ button.close-popup {
 
   /* 회사소개 */
   #greeting{padding:15px 12px}	
-  #greeting .tit_area{font-size:22px}
+  #greeting .tit_area{font-size:22px;font-weight: 300;}
   #greeting .cont .box_wrap {
     width: 100%;
   }
