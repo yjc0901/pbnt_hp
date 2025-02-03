@@ -1109,6 +1109,11 @@ button.close-popup {
     font-size: 32px;
   }
 
+  .mes-solution img {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+
   .mes-features p {
     font-size: 20px;
   }
