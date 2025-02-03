@@ -975,7 +975,19 @@ button.close-popup {
 }
 
 @media(max-width:480px){
+  /***/
+  .intro-title {
+    padding: 20px;
+  }
+
   /* 회사소개 */
   #greeting{padding:15px 12px}	
   #greeting .tit_area{font-size:22px}
+
+  /* axDx */
+  .vision-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
