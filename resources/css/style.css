@@ -912,6 +912,9 @@ button.close-popup {
 }
 
 @media(max-width:960px){
+  /* 회사소개 */
+  .cont h2{font-size:30px}
+
   /* 연혁 */
   .timeline-content {
     width: 400px;
@@ -983,6 +986,13 @@ button.close-popup {
   /* 회사소개 */
   #greeting{padding:15px 12px}	
   #greeting .tit_area{font-size:22px}
+  #greeting .cont .box_wrap {
+    width: 100%;
+  }
+  #greeting .cont .box {
+    font-size: 20px;
+    font-weight: 300;
+  }
 
   /* axDx */
   .vision-grid {
@@ -1002,5 +1012,46 @@ button.close-popup {
 
   .preview-stack {
     padding: 2rem 2rem;
+  }
+
+  #greeting .header {
+    display: none; /* 모바일에서는 헤더 숨김 */
+  }
+
+  #greeting .content {
+      flex-direction: column;
+      border: none;
+  }
+
+  #greeting .card {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 20px;
+  }
+
+  #greeting .card:before {
+      content: attr(data-title);
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      color: #4aa543;
+      margin-bottom: 15px;
+      background: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  #greeting .content .card:not(:last-child) {
+      border-right: 1px solid #ddd;
+  }
+
+  #greeting .list {
+      font-size: 14px;
+  }
+
+  #greeting .list li {
+      font-size: 14px;
   }
 }
