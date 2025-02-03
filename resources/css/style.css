@@ -658,7 +658,6 @@ dd {
 
 .pricing-title {
   text-align: center;
-  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #333;
@@ -1168,10 +1167,6 @@ button.close-popup {
   }  
 
   /* 가격안내 */
-  .pricing-title {
-    font-size: 2rem;
-  }
-
   .pricing-subtitle {
     font-size: 1rem;
   }
