@@ -1021,8 +1021,16 @@ button.close-popup {
 
 @media(max-width:480px){
   /***/
+  h1 {
+    font-size: 1.9rem;
+  }
+
   .intro-title {
     padding: 20px;
+  }
+
+  .intro-title p {
+    font-size: 1.2rem;
   }
 
   /* 회사소개 */
