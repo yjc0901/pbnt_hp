@@ -635,17 +635,21 @@ dd {
   box-shadow: 0 0 30px rgba(0,0,0,0.1);
   overflow: hidden;
   margin-bottom: 2rem;
+  overflow-x: auto;  /* 가로 스크롤 추가 */
+  -webkit-overflow-scrolling: touch;  /* iOS 스크롤 부드럽게 */
 }
 
 .pricing-header {
   display: flex;
   background: #f8f9fa;
   font-weight: 600;
+  min-width: max-content;
 }
 
 .pricing-row {
   display: flex;
   border-top: 1px solid #eee;
+  min-width: max-content;
 }
 
 .pricing-row.annual {
