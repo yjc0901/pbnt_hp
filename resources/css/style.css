@@ -994,26 +994,6 @@ button.close-popup {
     font-weight: 300;
   }
 
-  /* axDx */
-  .vision-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  /* processOptimization */
-  .team-strength {
-    padding: 2rem 2rem;
-  }
-
-  .project-highlight {
-    padding: 2rem 2rem;
-  }
-
-  .preview-stack {
-    padding: 2rem 2rem;
-  }
-
   #greeting .header {
     display: none; /* 모바일에서는 헤더 숨김 */
   }
@@ -1054,4 +1034,25 @@ button.close-popup {
   #greeting .list li {
       font-size: 14px;
   }
+
+  /* axDx */
+  .vision-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* processOptimization */
+  .team-strength {
+    padding: 2rem 2rem;
+  }
+
+  .project-highlight {
+    padding: 2rem 2rem;
+  }
+
+  .preview-stack {
+    padding: 2rem 2rem;
+  }
+
 }
