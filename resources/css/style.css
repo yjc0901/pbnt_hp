@@ -498,6 +498,7 @@ dd {
 }
 
 .app-strength-img img {
+  width: 80%;
   max-width: 100%;
   height: auto;
   border-radius: 20px;
@@ -1157,4 +1158,18 @@ button.close-popup {
   .app-project-placeholder li {
     font-size: 20px;
   }  
+
+  /* 가격안내 */
+  .pricing-title {
+    font-size: 2rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 1rem;
+  }
+
+  /* 문의하기 */
+  .form-agree label {
+    display: inline;
+  }
 }
