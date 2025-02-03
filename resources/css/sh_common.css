@@ -216,11 +216,19 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 #sh_ft .link{gap:26px}
 }
 @media (max-width:960px){
+    #topmenuM {
+        width: 40%;
+    }
     #navWrap.on .inner:before, #navWrap.on .inner:after {
         opacity: 0;
     }
 }
 @media (max-width:768px){
+    #topmenuM {
+        width: 100%;
+        line-height: 0.1;
+        padding: 12px;
+    }
 #sh_section .top_cont{position:unset !important;flex-direction:column;align-items:center;gap:18px;margin-bottom:40px}
 #sh_section .tit_area{width:100%;text-align:center}
 #sh_section .tit_area b{font-size:14px}
