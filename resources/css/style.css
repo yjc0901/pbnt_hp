@@ -1055,4 +1055,30 @@ button.close-popup {
     padding: 2rem 2rem;
   }
 
+  /* mes */
+  .mes-solution h1 {
+    font-size: 32px;
+  }
+
+  .mes-features p {
+    font-size: 20px;
+  }
+
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: -8px;
+  }
+
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: -8px;
+  }
+
+  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    content: 'prev';
+    font-size: x-large;
+  }
+
+  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    content: 'next';
+    font-size: x-large;
+  }
 }
