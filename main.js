@@ -195,6 +195,16 @@ app.get('/contact/board', async (req, res) => {
     }
 });
 
+// 앱 개인정보처리방침
+app.get('/gnu_mot/privacy', async (req, res) => {
+    try {
+        res.render('gnu_mot/privacy');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('error');
+    }
+});
+
 // 폼 제출 처리
 app.post('/contact/contact', (req, res) => {
     const { name, company, email, phone, inquiry_type, message } = req.body;
