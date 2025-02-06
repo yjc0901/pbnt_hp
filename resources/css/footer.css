@@ -13,6 +13,7 @@ footer .bottom {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
+    align-items: flex-start;
 }
 
 footer .info {
@@ -21,6 +22,19 @@ footer .info {
 
 footer .info p {
     margin: 5px 0;
+}
+
+footer .gnu_mot_info {
+    text-align: left;
+}
+
+footer .gnu_mot_info p {
+    margin: 5px 0;
+}
+
+footer .gnu_mot_info p a {
+    color: #fff;
+    text-decoration: none;
 }
 
 footer .copy {
