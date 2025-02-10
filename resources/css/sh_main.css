@@ -39,7 +39,7 @@
 }
 @media (max-width:480px){
 #mainVisual .main_slide{height:360px}
-#mainVisual .main_txt p{margin-bottom:18px;font-size:26px}
+#mainVisual .main_txt p{margin-bottom:18px;font-size:26px;padding: 0 50px;}
 #mainVisual .main_txt span{font-size:14px}
 #mainVisual .tabs{bottom:34px;width:350px;height:48px}
 #mainVisual .tabs span{width:calc(100% / 3);font-size:13px}
