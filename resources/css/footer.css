@@ -46,9 +46,11 @@ footer .copy {
     footer .bottom {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
-    footer .info, footer .copy {
+    footer .info, footer .gnu_mot_info, footer .copy {
         text-align: center;
         margin: 10px 0;
+        width: 100%;
     }
 }
