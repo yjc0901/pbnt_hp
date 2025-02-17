@@ -189,6 +189,7 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 }
 @media (max-width:1380px){
 #shGnb{padding: 0 10px;}
+#shGnb .sh_nav>ul>li {margin-right: 18px;}
 #sh_section .top_cont{padding:0px;width:85%}
 #sh_section .tit_area p{padding:16px 0 36px;font-size:42px}
 #sh_section .view_btn{width:190px;height:68px}
@@ -201,7 +202,6 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 @media (max-width:1024px){
 label, input, button, select, img{width: 30%;}
 #shGnb{display:none}
-#shGnb .sh_nav>ul>li {margin-right: 18px;}
 #topmenuM{display:block}
 #navWrap{display:none}
 #sh_section .top_cont{width:95%}
