@@ -201,6 +201,7 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 @media (max-width:1024px){
 label, input, button, select, img{width: 30%;}
 #shGnb{display:none}
+#shGnb .sh_nav>ul>li {margin-right: 18px;}
 #topmenuM{display:block}
 #navWrap{display:none}
 #sh_section .top_cont{width:95%}
