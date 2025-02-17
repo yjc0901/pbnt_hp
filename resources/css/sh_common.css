@@ -199,7 +199,7 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 #sh_ft .copy p{word-break:keep-all}
 }
 @media (max-width:1024px){
-label, input, button, select, img{vertical-align:middle; width: 20%; height: auto;}
+label, input, button, select, img{width: 30%;}
 #shGnb{display:none}
 #topmenuM{display:block}
 #navWrap{display:none}
@@ -274,6 +274,7 @@ label, input, button, select, img{vertical-align:middle; width: 20%; height: aut
 #sh_content_wrapper {padding: 20px;}
 }
 @media (max-width:480px){
+label, input, button, select, img{width: 60%;}
 #sh_hd.sub{position:relative;background-color:#222}
 #sh_content{padding:50px 0}
 #sh_section .tit_area p{padding:10px 0 18px;font-size:24px}
