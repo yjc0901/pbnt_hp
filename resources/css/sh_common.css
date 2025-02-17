@@ -145,9 +145,9 @@ h2 {font-size: 32px;color: #333;font-weight: 700;margin-bottom: 20px;}
 
 /* ========================== CONTAINER */
 #sh_container{position:relative;z-index:10;width:100%;flex:1;}
-/* #sh_content{overflow:hidden;position:relative;z-index:10;width:100%;max-width:1200px;min-height:550px;padding:70px 0;margin:0 auto;background:#fff} */
+#sh_content{overflow:hidden;position:relative;z-index:10;width:100%;max-width:1200px;min-height:550px;padding:70px 0;margin:0 auto;background:#fff}
 /* #sh_content{overflow:hidden;position:relative;z-index:10;width:100%;max-width:1900px;min-height:550px;margin:0 auto;background:#fff} */
-#sh_content{min-height: 100vh;display: flex;flex-direction: column;}
+/* #sh_content{min-height: 100vh;display: flex;flex-direction: column;} */
 #sh_content_wrapper{text-align: center;}
 
 /* ========================== FOOTER */
