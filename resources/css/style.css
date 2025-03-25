@@ -593,9 +593,7 @@ dd {
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0,0,0,0.1);
   overflow: hidden;
-  margin-bottom: 2rem;
   overflow-x: auto;  /* 가로 스크롤 추가 */
-  -webkit-overflow-scrolling: touch;  /* iOS 스크롤 부드럽게 */
 }
 
 .pricing-header {
